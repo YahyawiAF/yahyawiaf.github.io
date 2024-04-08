@@ -1,9 +1,14 @@
 import React, { useRef, useState } from "react";
-import { Box, Button, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  TextField,
+  Typography,
+  Dialog,
+  DialogContent,
+  IconButton,
+} from "@mui/material";
 import { styled } from "@mui/material/styles";
-import Dialog from "@mui/material/Dialog";
-import DialogContent from "@mui/material/DialogContent";
-import IconButton from "@mui/material/IconButton";
 import { ReactComponent as CloseModal } from "../../../assets/icons/CloseModal.svg";
 // import emailjs from "@emailjs/browser";
 

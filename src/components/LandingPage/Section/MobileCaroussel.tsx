@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import { styled } from "@mui/material/styles";
+import { useTheme, styled } from "@mui/material/styles";
 
 import ImageA from "../../../assets/images/ImageA.png";
 import ImageB from "~/assets/images/imageB.png";

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import useResponsive from "~/hooks/useResponsive";
 import { Box, alpha, styled } from "@mui/material";
 import { ReactComponent as Menu } from "../../../assets/icons/Menu.svg";

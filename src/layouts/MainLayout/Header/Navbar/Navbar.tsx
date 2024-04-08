@@ -1,9 +1,7 @@
-import { List, ListItem, ListItemButton, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { List, ListItem, Box, styled } from "@mui/material";
 import { ReactComponent as Logo } from "../../../../assets/icons/Logo.svg";
 import { useNavigate } from "react-router-dom";
 import React from "react";
-import { styled } from "@mui/material/styles";
 
 const NavContainer = styled(Box)(({ theme }) => ({
   display: "flex",

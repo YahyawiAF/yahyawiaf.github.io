@@ -1,13 +1,11 @@
-import { FC, ReactNode, useContext } from "react";
-import { alpha, lighten, useTheme } from "@mui/material";
+import { FC, ReactNode, useState, useRef } from "react";
+import { alpha, lighten, useTheme, Box, Popover } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import { ReactComponent as DropDown } from "../../assets/icons/DropDown.svg";
 import { ReactComponent as Message } from "../../assets/icons/Message.svg";
-import { Box, Popover } from "@mui/material";
 import Discuttion from "../../components/LandingPage/Section/Discuttion";
 import EmailSender from "~/components/LandingPage/Section/EmailSender";
-import { useState, useRef } from "react";
 
 interface SidebarLayoutProps {
   children?: ReactNode;
