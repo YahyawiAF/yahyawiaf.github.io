@@ -1,11 +1,9 @@
-import { Box, Divider, IconButton, List, Typography } from "@mui/material";
+import { Box, Divider, IconButton, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { ReactComponent as Facebook } from "../../../assets/icons/Facebook.svg";
-import { ReactComponent as Instagram } from "../../../assets/icons/Instagram.svg";
 import { ReactComponent as Linkedin } from "../../../assets/icons/Linkedin.svg";
 import { ReactComponent as Mail } from "../../../assets/icons/Mail.svg";
 import { ReactComponent as Phone } from "../../../assets/icons/Phone.svg";
-import React from "react";
 const FooterContent = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
@@ -25,30 +23,17 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        background: "#0B6AB0",
+        background: " #3484ee",
         width: "100%",
         height: "100%",
       }}
     >
       <Divider sx={{ border: "2px solid #FFFFFF", width: "100%" }} />
-      <FooterContent
-        sx={
-          {
-            // display: "flex",
-            // alignItems: "center",
-            // justifyContent: "center",
-          }
-        }
-      >
+      <FooterContent sx={{}}>
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
-
-            // justifyContent: "start",
-            // paddingLeft: "300px",
-            // paddingBottom: "50px",
-            // paddingTop: "90px",
             gap: "20px",
           }}
         >
@@ -56,9 +41,6 @@ const Footer = () => {
             <Facebook />
           </IconButton>
 
-          {/* <IconButton >
-            <Instagram />
-          </IconButton> */}
           <IconButton href="https://www.linkedin.com/in/yahyawi-abdel-fatteh-675468141/">
             <Linkedin />
           </IconButton>
@@ -69,7 +51,6 @@ const Footer = () => {
             flexDirection: "column",
             gap: "20px",
             padding: "20px",
-            // paddingRight: "300px",
           }}
         >
           <Typography

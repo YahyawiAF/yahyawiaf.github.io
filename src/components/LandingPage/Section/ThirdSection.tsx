@@ -24,7 +24,7 @@ const ThirdSection = () => {
       <Box
         sx={{ display: "flex", flexDirection: "column", paddingLeft: "20px" }}
       >
-        <Typography variant="h3" color={"#000000"}>
+        <Typography variant="h3" color={"#fff"}>
           Our Services
         </Typography>
         <Typography fontSize={"24px"} color={"#777777"}>
@@ -56,7 +56,7 @@ const ThirdSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   background:
-                    "linear-gradient(180deg, #297CBA 45.8%, rgba(255, 255, 255, 0) 100%)",
+                    "linear-gradient(180deg, #3484ee 90%, rgba(11, 106, 176, 0) 100%)",
 
                   alignItems: "center",
                   justifyContent: "space-between",
@@ -69,7 +69,11 @@ const ThirdSection = () => {
                 <Typography>
                   <Metting width={"70px"} />
                 </Typography>
-                <Typography fontSize={"24px"} color={"#000000"}>
+                <Typography
+                  fontFamily={"Poetsen One"}
+                  fontSize={"24px"}
+                  color={"#fff"}
+                >
                   Product Management
                 </Typography>
               </Paper>
@@ -80,7 +84,7 @@ const ThirdSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   background:
-                    "linear-gradient(357deg, #EF86B0 45.8%, rgba(239, 134, 176, 0) 100%)",
+                    "linear-gradient(180deg,rgba(11, 106, 176, 0) 0% , #3484ee 10%)",
                   alignItems: "center",
                   justifyContent: "space-between",
 
@@ -92,7 +96,11 @@ const ThirdSection = () => {
                 <Typography>
                   <Cloud width={"70px"} />
                 </Typography>
-                <Typography fontSize={"24px"} color={"#000000"}>
+                <Typography
+                  fontFamily={"Poetsen One"}
+                  fontSize={"24px"}
+                  color={"#fff"}
+                >
                   Cloud & DevOps
                 </Typography>
               </Paper>
@@ -113,7 +121,7 @@ const ThirdSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   background:
-                    "linear-gradient(180deg, #EF86B0 45.8%, rgba(239, 134, 176, 0) 100%)",
+                    "linear-gradient(180deg, #3484ee 90%, rgba(11, 106, 176, 0) 100%)",
                   alignItems: "center",
                   justifyContent: "space-between",
 
@@ -122,7 +130,11 @@ const ThirdSection = () => {
                   borderRadius: "10px 10px 0px 0px",
                 }}
               >
-                <Typography fontSize={"24px"} color={"#000000"}>
+                <Typography
+                  fontFamily={"Poetsen One"}
+                  fontSize={"24px"}
+                  color={"#fff"}
+                >
                   UX/UI Design
                 </Typography>
                 <Typography>
@@ -136,7 +148,7 @@ const ThirdSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   background:
-                    "linear-gradient(2deg, #297CBA 45.8%, rgba(255, 255, 255, 0) 100%)",
+                    "linear-gradient(180deg, rgba(11, 106, 176, 0) 0% ,  #3484ee 10%)",
                   alignItems: "center",
                   justifyContent: "space-between",
 
@@ -145,7 +157,11 @@ const ThirdSection = () => {
                   borderRadius: "0px 0px 10px 10px",
                 }}
               >
-                <Typography fontSize={"24px"} color={"#000000"}>
+                <Typography
+                  fontFamily={"Poetsen One"}
+                  fontSize={"24px"}
+                  color={"#fff"}
+                >
                   Staff Augumentation
                 </Typography>
                 <Typography>
@@ -170,7 +186,7 @@ const ThirdSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   background:
-                    "linear-gradient(180deg, #297CBA 45.8%, rgba(255, 255, 255, 0) 100%)",
+                    "linear-gradient(180deg, #3484ee 90%, rgba(11, 106, 176, 0) 100%)",
                   alignItems: "center",
                   justifyContent: "space-between",
 
@@ -182,7 +198,7 @@ const ThirdSection = () => {
                 <Typography>
                   <Dev width={"70px"} />
                 </Typography>
-                <Typography fontSize={"24px"} color={"#000000"}>
+                <Typography fontSize={"24px"} color={"#fff"}>
                   Development
                 </Typography>
               </Paper>
@@ -194,7 +210,7 @@ const ThirdSection = () => {
                   display: "flex",
                   flexDirection: "column",
                   background:
-                    "linear-gradient(357deg, #EF86B0 45.8%, rgba(239, 134, 176, 0) 100%)",
+                    "linear-gradient(180deg,rgba(11, 106, 176, 0) 0% , #3484ee 10%)",
                   alignItems: "center",
                   justifyContent: "space-between",
                   boxShadow: "none",
@@ -205,7 +221,11 @@ const ThirdSection = () => {
                 <Typography>
                   <Support width={"70px"} />
                 </Typography>
-                <Typography fontSize={"24px"} color={"#000000"}>
+                <Typography
+                  fontFamily={"Poetsen One"}
+                  fontSize={"24px"}
+                  color={"#fff"}
+                >
                   Support
                 </Typography>
               </Paper>

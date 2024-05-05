@@ -1,39 +1,34 @@
 import { Box, Button, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import LandingImg from "../../../assets/images/LandingImg.png";
-import Map from "../../../assets/images/Map.png";
+import space from "../../../assets/images/space.jpg";
 import CustomizedDialogs from "./ModalStarted";
 import { useState } from "react";
 
 const Title = styled(Typography)(({ theme }) => ({
-  fontFamily: "Josefin Sans",
-  fontStyle: "normal",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  textAlign: "center",
+  fontFamily: "Poetsen One",
+  fontSize: "27px",
+  fontWeight: "600",
   textTransform: "uppercase",
-  padding: "40px",
-
+  textAlign: "center",
   color: "#FFFFFF",
-  fontSize: "52px",
   [theme.breakpoints.down("sm")]: {
     fontSize: "32px",
   },
 }));
-
-const ButtonStart = styled(Button)(({ theme }) => ({
-  width: "300px",
-  height: "66px",
-  fontSize: "24px",
-
-  background: "#ED6A9E",
-  boxShadow: "0px 27px 24px rgba(0, 0, 0, 0.3)",
-  borderRadius: "55.5px",
+const ButtonStarts = styled(Button)(({ theme }) => ({
+  textTransform: "uppercase",
+  fontFamily: "unset",
+  borderRadius: "4px",
+  fontWeight: "600",
+  fontSize: "14px",
+  letterSpacing: "0.03em",
+  color: "white",
+  background: "transparent",
+  border: "2px solid #f736f8",
   [theme.breakpoints.down("sm")]: {
     width: "170px",
     height: "35px",
-    fontSize: "15px",
+    fontSize: "11px",
   },
 }));
 const FirstSection = () => {
@@ -55,12 +50,12 @@ const FirstSection = () => {
           paddingTop: "15% ",
           paddingRight: "20%",
           paddingLeft: "20%",
-
-          background: `url(${Map}), linear-gradient(180deg, #0B6AB0 0%, rgba(11, 106, 176, 0) 100%)`,
-          backgroundPositionY: "center !important",
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          gap: "60px",
+          backgroundImage: `url(${space}), linear-gradient(180deg, #000 0%, rgba(11, 106, 176, 0) 100%)`,
+          backgroundRepeat: " no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          height: "500px",
+          justifyContent: "space-between",
         }}
         id="home"
       >
@@ -72,9 +67,9 @@ const FirstSection = () => {
             justifyContent: "center",
           }}
         >
-          <ButtonStart variant="contained" onClick={() => setShow(true)}>
-            Getting STARTED
-          </ButtonStart>
+          <ButtonStarts variant="contained" onClick={() => setShow(true)}>
+            Getting Started
+          </ButtonStarts>
         </Typography>
         <Typography
           sx={{
@@ -82,9 +77,7 @@ const FirstSection = () => {
             alignItems: "center",
             justifyContent: "center",
           }}
-        >
-          <img src={LandingImg} width="100%" />
-        </Typography>
+        ></Typography>
       </Box>
     </>
   );

@@ -87,22 +87,6 @@ export default function CustomizedDialogs({
       subject: subject,
       content: content,
     };
-    const contents = `${form.current}`;
-    // emailjs
-    //   .sendForm(
-    //     "service_fmpomjh",
-    //     "template_rvilwpi",
-    //     form.current,
-    //     "i5fJ9iqi4a9bX4TWH"
-    //   )
-    //   .then(
-    //     result => {
-    //       console.log(result.text);
-    //     },
-    //     error => {
-    //       console.log(error.text);
-    //     }
-    //   );
   };
 
   return (
@@ -133,7 +117,7 @@ export default function CustomizedDialogs({
             </Box>
 
             <Box>
-              <Typography sx={{ fontSize: "18px", color: "#868686" }}>
+              <Typography sx={{ fontSize: "12px", color: "#868686" }}>
                 Let’s make something awesome together
               </Typography>
             </Box>
@@ -141,11 +125,11 @@ export default function CustomizedDialogs({
           <form ref={form} onSubmit={HandleSubmit}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: "15px" }}>
               <Typography sx={{ fontSize: "15px" }}>
-                YOUR NAME
+                Name
                 <TextField
                   id="outlined-size-small"
                   size="small"
-                  placeholder="Write here"
+                  placeholder="write here"
                   sx={{ width: "100%" }}
                   // value={name}
                   name="user_name"
@@ -154,11 +138,11 @@ export default function CustomizedDialogs({
               </Typography>
 
               <Typography sx={{ fontSize: "15px" }}>
-                YOUR Email
+                Email
                 <TextField
                   id="outlined-size-small"
                   size="small"
-                  placeholder="Write here"
+                  placeholder="write here"
                   sx={{ width: "100%" }}
                   // value={email}
                   name="user_email"
@@ -166,11 +150,11 @@ export default function CustomizedDialogs({
                 />
               </Typography>
               <Typography sx={{ fontSize: "15px" }}>
-                SUBJECT
+                Subject
                 <TextField
                   id="outlined-size-small"
                   size="small"
-                  placeholder="Write here"
+                  placeholder="write here"
                   sx={{ width: "100%" }}
                   // value={subject}
                   name="subject"
@@ -184,7 +168,7 @@ export default function CustomizedDialogs({
                   // label="Multiline"
                   multiline
                   rows={4}
-                  placeholder="Write here"
+                  placeholder="write here"
                   sx={{ width: "100%" }}
                   name="content"
                   // value={content}

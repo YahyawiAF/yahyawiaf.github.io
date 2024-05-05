@@ -1,4 +1,5 @@
-import { Box, Button, Paper, styled, Typography, Stepper } from "@mui/material";
+/* eslint-disable react/no-unescaped-entities */
+import { Box, Button, styled, Typography } from "@mui/material";
 
 import { useTheme } from "@mui/material/styles";
 
@@ -25,8 +26,8 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const Title = styled(Typography)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: "400",
-  fontSize: "48px",
-
+  fontSize: "34px",
+  fontFamily: "Poetsen One",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "36px",
@@ -49,9 +50,10 @@ const SubTitle = styled(Typography)(({ theme }) => ({
   },
 }));
 const TextDescription = styled(Typography)(({ theme }) => ({
-  fontSize: "32px",
+  fontSize: "1rem",
   color: "#000000",
-  padding: "20px",
+  fontFamily: "Poetsen One",
+  padding: "20px 0",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "24px",
   },
@@ -64,7 +66,8 @@ const TextDescription = styled(Typography)(({ theme }) => ({
 const TextAppear = styled(Typography)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: "400",
-  fontSize: "32px",
+  fontSize: "1.5rem",
+  fontFamily: "Poetsen One",
   lineHeight: "117.5%",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
@@ -80,10 +83,11 @@ const TextAppear = styled(Typography)(({ theme }) => ({
 const TitleAppear = styled(Typography)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: "400",
-
+  fontSize: "28px",
+  fontFamily: "Poetsen One",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
-    fontSize: "32px",
+    fontSize: "14px",
   },
   [theme.breakpoints.down("md")]: {
     fontSize: "24px",
@@ -93,14 +97,14 @@ const TitleAppear = styled(Typography)(({ theme }) => ({
   },
 }));
 const TitleImage = styled(Typography)(({ theme }) => ({
-  fontSize: "36px",
+  fontSize: "1.5rem",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
-    fontSize: "26px",
+    fontSize: "16px",
   },
 }));
 const TextImage = styled(Typography)(({ theme }) => ({
-  fontSize: "32px",
+  fontSize: "16px",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "22px",
@@ -109,7 +113,6 @@ const TextImage = styled(Typography)(({ theme }) => ({
 const Caroussel = styled(Box)(({ theme }) => ({
   maxWidth: "1080px",
   flexGrow: 1,
-  maxHeight: "500px",
   [theme.breakpoints.between("md", "lg")]: {
     maxWidth: "880px",
     maxHeight: "500px",
@@ -131,7 +134,7 @@ const AboutBox = styled(Box)(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
   paddingTop: "60px",
-  gap: "150px",
+  gap: "30px",
 
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
@@ -147,14 +150,9 @@ const AboutContent = styled(Box)(({ theme }) => ({
   justifyContent: "space-between",
   gap: "40px",
   padding: "40px",
-  // height: "500px",
 
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
-    // alignItems: "flex-start",
-    // height: "500px",
-    // minHeight: "400px",
-
     width: "100%",
     gap: "20px",
   },
@@ -175,23 +173,13 @@ const AboutItem = styled(Box)(({ theme }) => ({
     justifyContent: "center",
   },
 }));
-const AboutTextContainer = styled(Box)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-
-  width: "50%",
-
-  [theme.breakpoints.down("md")]: {
-    width: "100%",
-  },
-}));
 const Container = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
 
   width: "100%",
-  gap: "150px",
-  background: "linear-gradient(357deg, #0B6AB0 0%, rgba(11, 106, 176, 0) 100%)",
+  gap: "30px",
+  background: "linear-gradient(180deg,rgba(11, 106, 176, 0) 0% , #3484ee 10%)",
 
   [theme.breakpoints.down("md")]: {
     gap: "80px",
@@ -210,12 +198,16 @@ const ContactContent = styled(Box)(({ theme }) => ({
   },
 }));
 const ButtonStart = styled(Button)(({ theme }) => ({
-  width: "277px",
-  height: "66px",
-  fontSize: "24px",
-  background: "#ED6A9E",
-  boxShadow: "0px 27px 24px rgba(0, 0, 0, 0.3)",
-  borderRadius: "55.5px",
+  width: "200px",
+  height: "55px",
+  borderRadius: "4px",
+  fontWeight: "600",
+  fontSize: "19px",
+  letterSpacing: "0.03em",
+  color: "white",
+  fontFamily: "Poetsen One",
+  background: "transparent",
+  border: "2px solid #f736f8",
   [theme.breakpoints.down("md")]: {
     width: "170px",
     height: "40px",
@@ -226,21 +218,18 @@ const ButtonStart = styled(Button)(({ theme }) => ({
   },
 }));
 const ContactTitle = styled(Typography)(({ theme }) => ({
-  fontSize: "64px",
-  lineHeight: "64px",
+  fontSize: "3rem",
+  fontFamily: "Poetsen One ",
   textAlign: "center",
   color: "#FFFFFF",
   [theme.breakpoints.down("md")]: {
     fontSize: "36px",
-    // fontSize: "18px",
-    // width: "100%",
   },
 }));
 const ContactContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  gap: "170px",
   paddingTop: "100px",
   paddingBottom: "100px",
   [theme.breakpoints.down("md")]: {
@@ -253,6 +242,7 @@ const ContactContainer = styled(Box)(({ theme }) => ({
 const ContactText = styled(Typography)(({ theme }) => ({
   display: "flex",
   fontSize: "32px",
+  fontFamily: "Poetsen One",
   justifyContent: "start",
   color: "#FFFFFF",
   [theme.breakpoints.down("md")]: {
@@ -268,7 +258,7 @@ const ContactSubContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  gap: "150px",
+  gap: "30px",
   paddingLeft: "60px",
   [theme.breakpoints.down("md")]: {
     paddingLeft: "0px",
@@ -460,9 +450,8 @@ const FourthSection = () => {
           flexDirection: "column",
 
           width: "100%",
-          gap: "150px",
           background:
-            "linear-gradient(357deg, #0B6AB0 0%, rgba(11, 106, 176, 0) 100%)",
+            "linear-gradient(180deg,rgba(11, 106, 176, 0) 0% , #3484ee 90%)",
         }}
       >
         <Box
@@ -474,7 +463,7 @@ const FourthSection = () => {
           id="process"
         >
           <Title>Our Process</Title>
-          <SubTitle>THE MAGIC IS IN THE DETAILS</SubTitle>
+          <SubTitle>The magic is in the details</SubTitle>
           <TextDescription>
             We love crafting unique products tailored to our clients’
             requirements, using a customer-centric Agile product delivery
@@ -504,7 +493,7 @@ const FourthSection = () => {
                   index={activeStep}
                   enableMouseEvents
                 >
-                  {images.map((step, index) => (
+                  {images.map(step => (
                     <div key={step.label}>{step.content}</div>
                   ))}
                 </AutoPlaySwipeableViews>
@@ -545,13 +534,13 @@ const FourthSection = () => {
               sx={{
                 display: "flex",
                 flexDirection: "column",
+                alignItems: "flex-start",
+                padding: "0 20px",
               }}
               id="about"
             >
               <Title>About</Title>
               <SubTitle>WE BRING YOUR IDEAS TO LIFE</SubTitle>
-            </Box>
-            <AboutTextContainer>
               <TextDescription>
                 We love crafting unique products tailored to our clients’
                 requirements, using a customer-centric Agile product delivery
@@ -560,16 +549,18 @@ const FourthSection = () => {
                 across multiple touch points to help startups and companies
                 achieve their goals fast and effectively.
               </TextDescription>
-            </AboutTextContainer>
+            </Box>
           </AboutBox>
         </Box>
         <AboutContent>
           <AboutItem
             sx={{
               backgroundImage: `url(${Question})`,
+              backgroundPosition: "center",
+              backgroundSize: "contain",
             }}
           >
-            <TitleAppear variant="h3">WHO WE ARE</TitleAppear>
+            <TitleAppear>WHO WE ARE</TitleAppear>
             <TextAppear>
               We are a boutique software development company based in Tunis. We
               offer product consulting services and build innovative digital
@@ -579,9 +570,11 @@ const FourthSection = () => {
           <AboutItem
             sx={{
               backgroundImage: `url(${YinYang})`,
+              backgroundPosition: "center",
+              backgroundSize: "contain",
             }}
           >
-            <TitleAppear variant="h3">OUR PHILOSOPHY</TitleAppear>
+            <TitleAppear>OUR PHILOSOPHY</TitleAppear>
             <TextAppear>
               We are a boutique software development company based in Tunis. We
               offer product consulting services and build innovative digital
@@ -591,9 +584,11 @@ const FourthSection = () => {
           <AboutItem
             sx={{
               backgroundImage: `url(${Bag})`,
+              backgroundPosition: "center",
+              backgroundSize: "contain",
             }}
           >
-            <TitleAppear variant="h3">HOW WE WORK</TitleAppear>
+            <TitleAppear>HOW WE WORK</TitleAppear>
             <TextAppear>
               We put the end-users product experience at the heart of our
               thinking process while taking into consideration competition and
@@ -624,7 +619,7 @@ const FourthSection = () => {
                     setShow(true);
                   }}
                 >
-                  Getting STARTED
+                  let's talk
                 </ButtonStart>
               </Typography>
             </ContactSubContainer>

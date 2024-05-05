@@ -17,14 +17,14 @@ import { autoPlay } from "react-swipeable-views-utils";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const TitleImage = styled(Typography)(({ theme }) => ({
-  fontSize: "20px",
+  fontSize: "1.5rem",
   color: "#000000",
   //   [theme.breakpoints.between("md", "lg")]: {
   //     fontSize: "26px",
   //   },
 }));
 const TextImage = styled(Typography)(({ theme }) => ({
-  fontSize: "18px",
+  fontSize: "1rem",
   color: "#000000",
   //   [theme.breakpoints.between("md", "lg")]: {
   //     fontSize: "22px",

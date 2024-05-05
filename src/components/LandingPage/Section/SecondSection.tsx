@@ -35,8 +35,8 @@ const PaperWarper = styled(Paper)(({ theme }) => ({
 }));
 
 const Text = styled(Typography)(({ theme }) => ({
-  fontSize: "36px",
-  color: "#000000",
+  fontSize: "18px",
+  color: "#FFF",
   [theme.breakpoints.down("md")]: {
     fontSize: "28px",
   },
@@ -46,8 +46,8 @@ const Text = styled(Typography)(({ theme }) => ({
   },
 }));
 const TitleText = styled(Typography)(({ theme }) => ({
-  fontSize: "40px",
-  color: "#000000",
+  fontSize: "30px",
+  color: "#FFF",
   [theme.breakpoints.down("md")]: {
     fontSize: "32px",
   },
@@ -72,7 +72,7 @@ const SecondSection = () => {
       <PaperWarper
         sx={{
           background:
-            "linear-gradient(89.9deg, #0B6AB0 -13.11%, rgba(11, 106, 176, 0) 101.41%)",
+            "linear-gradient(89.9deg, #3484ee 43.89%, rgba(11, 106, 176, 0) 132.41%)",
         }}
       >
         <Box>
@@ -92,7 +92,7 @@ const SecondSection = () => {
       <PaperWarper
         sx={{
           background:
-            "linear-gradient(268deg, #0B6AB0 -13.11%, rgba(11, 106, 176, 0) 101.41%)",
+            "linear-gradient(89.9deg,rgba(11, 106, 176, 0)  -17.11%, #3484ee 85.41%)",
         }}
       >
         <ElementBox>
@@ -112,7 +112,7 @@ const SecondSection = () => {
       <PaperWarper
         sx={{
           background:
-            "linear-gradient(89.9deg, #0B6AB0 -13.11%, rgba(11, 106, 176, 0) 101.41%)",
+            "linear-gradient(89.9deg, #3484ee 43.89%, rgba(11, 106, 176, 0) 132.41%)",
         }}
       >
         <Box>
