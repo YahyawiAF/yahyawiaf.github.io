@@ -15,7 +15,6 @@ import { ReactComponent as Send } from "../../../assets/icons/Send.svg";
 import emailjs from "@emailjs/browser";
 
 const EmailSender = ({
-  showChat,
   onShowChat,
 }: {
   showChat: boolean;

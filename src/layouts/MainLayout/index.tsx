@@ -63,7 +63,7 @@ const SidebarLayout: FC<SidebarLayoutProps> = () => {
               sx={{ height: "100%", width: "100%", overflow: "auto" }}
               display="flex"
             >
-              <Box sx={{ overflowX: "hidden" }}>
+              <Box sx={{ overflowX: "hidden", width: "100%" }}>
                 <Outlet />
                 <Box>
                   <Box onClick={() => setShowMessage(true)} ref={ref}>

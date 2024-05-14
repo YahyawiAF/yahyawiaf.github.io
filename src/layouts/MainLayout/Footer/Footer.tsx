@@ -1,88 +1,208 @@
-import { Box, Divider, IconButton, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
-import { ReactComponent as Facebook } from "../../../assets/icons/Facebook.svg";
-import { ReactComponent as Linkedin } from "../../../assets/icons/Linkedin.svg";
-import { ReactComponent as Mail } from "../../../assets/icons/Mail.svg";
-import { ReactComponent as Phone } from "../../../assets/icons/Phone.svg";
-const FooterContent = styled(Box)(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  width: "100%",
-  gap: "400px",
+/*
+=========================================================
+* Material Kit 2 React - v2.1.0
+=========================================================
 
-  [theme.breakpoints.down("md")]: {
-    flexDirection: "column",
-    gap: "20px",
-    paddingTop: "20px",
-    paddingBottom: "20px",
-  },
-}));
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
-const Footer = () => {
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import { Container, Grid, Link, Stack, Box, Typography } from "@mui/material";
+import React from "react";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from "@mui/icons-material/X";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
+function Footer() {
   return (
-    <Box
-      sx={{
-        background: " #3484ee",
-        width: "100%",
-        height: "100%",
-      }}
-    >
-      <Divider sx={{ border: "2px solid #FFFFFF", width: "100%" }} />
-      <FooterContent sx={{}}>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: "20px",
-          }}
-        >
-          <IconButton href="https://www.facebook.com/AlgoSama-102888506041022">
-            <Facebook />
-          </IconButton>
-
-          <IconButton href="https://www.linkedin.com/in/yahyawi-abdel-fatteh-675468141/">
-            <Linkedin />
-          </IconButton>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "20px",
-            padding: "20px",
-          }}
-        >
-          <Typography
-            sx={{
-              display: "flex",
-              alignItems: "center",
-
-              gap: "20px",
-            }}
+    <Box component="footer" py={6}>
+      <Container>
+        <Grid container>
+          <Grid
+            item
+            xs={12}
+            lg={4}
+            textAlign={{ xs: "center", lg: "left" }}
+            mr="auto"
+            mb={{ xs: 3, lg: 0 }}
           >
-            <Mail />
-            <Typography fontSize={"32p"} color={"#FFFFFF"}>
-              abdelftt@gmail.com
+            <Typography
+              variant="h6"
+              textTransform="uppercase"
+              mb={{ xs: 2, lg: 3 }}
+            >
+              Material Design
             </Typography>
-          </Typography>
-          <Divider sx={{ border: "2px solid #FFFFFF", width: "250px" }} />
-          <Typography
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "20px",
-            }}
+            <Stack
+              component="ul"
+              direction="row"
+              flexWrap="wrap"
+              spacing={3}
+              justifyContent={{ xs: "center", lg: "flex-start" }}
+              pl={0}
+              mb={3}
+              sx={{ listStyle: "none" }}
+            >
+              <Box component="li">
+                <Typography
+                  variant="button"
+                  fontWeight="regular"
+                  sx={{
+                    opacity: 0.8,
+                  }}
+                  component={Link}
+                  href="https://www.creative-tim.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Home
+                </Typography>
+              </Box>
+              <Box component="li">
+                <Typography
+                  variant="button"
+                  fontWeight="regular"
+                  sx={{
+                    opacity: 0.8,
+                  }}
+                  component={Link}
+                  href="https://www.creative-tim.com/presentation"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  About
+                </Typography>
+              </Box>
+              <Box component="li">
+                <Typography
+                  variant="button"
+                  fontWeight="regular"
+                  sx={{
+                    opacity: 0.8,
+                  }}
+                  component={Link}
+                  href="https://www.creative-tim.com/blog"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Blog
+                </Typography>
+              </Box>
+              <Box component="li">
+                <Typography
+                  variant="button"
+                  fontWeight="regular"
+                  sx={{
+                    opacity: 0.8,
+                  }}
+                  component={Link}
+                  href="https://www.creative-tim.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Services
+                </Typography>
+              </Box>
+            </Stack>
+            <Typography
+              variant="button"
+              sx={{
+                opacity: 0.8,
+              }}
+            >
+              Copyright ©{" "}
+              <script>document.write(new Date().getFullYear())</script>2021
+              Material Design by Creative Tim.
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            lg={6}
+            ml="auto"
+            textAlign={{ xs: "center", lg: "right" }}
           >
-            <Phone />
-            <Typography fontSize={"32p"} color={"#FFFFFF"}>
-              +216 27 802 073
+            <Typography
+              variant="body1"
+              fontWeight="bold"
+              mb={6}
+              sx={{ fontSize: "1.125rem" }}
+            >
+              The reward for getting on the stage is fame. The price of fame is
+              you can&apos;t get off the stage.
             </Typography>
-          </Typography>
-        </Box>
-      </FooterContent>
+            <Typography
+              component={Link}
+              href="#dribbble"
+              target="_blank"
+              rel="noreferrer"
+              variant="body2"
+              color="dark"
+              sx={{
+                opacity: 0.5,
+              }}
+              mr={3}
+            >
+              <YouTubeIcon />
+              <i className="fab fa-dribbble" />
+            </Typography>
+            <Typography
+              component={Link}
+              href="#twitter"
+              target="_blank"
+              rel="noreferrer"
+              variant="body2"
+              color="dark"
+              sx={{
+                opacity: 0.5,
+              }}
+              mr={3}
+            >
+              <XIcon />
+              <i className="fab fa-twitter" />
+            </Typography>
+            <Typography
+              component={Link}
+              href="#pinterest"
+              target="_blank"
+              rel="noreferrer"
+              variant="body2"
+              color="dark"
+              sx={{
+                opacity: 0.5,
+              }}
+              mr={3}
+            >
+              <PinterestIcon />
+              <i className="fab fa-pinterest" />
+            </Typography>
+            <Typography
+              component={Link}
+              href="#github"
+              target="_blank"
+              rel="noreferrer"
+              variant="body2"
+              color="dark"
+              sx={{
+                opacity: 0.5,
+              }}
+            >
+              <GitHubIcon />
+              <i className="fab fa-github" />
+            </Typography>
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
   );
-};
+}
 
 export default Footer;

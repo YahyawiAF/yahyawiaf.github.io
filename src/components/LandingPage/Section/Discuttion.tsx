@@ -96,7 +96,6 @@ export default function Discuttion() {
           </Typography>
         </ListItem>
       </Box>
-      {/* <Divider sx={{ border: "1px solid #000000", width: "100%" }} /> */}
       <Box
         sx={{
           display: "flex",
@@ -105,32 +104,7 @@ export default function Discuttion() {
           paddingLeft: "10px",
           paddingTop: "10px",
         }}
-      >
-        {/* <Typography>
-          <TextField
-            id="standard-multiline-flexible"
-            // label=
-            placeholder="Write here..."
-            multiline
-            maxRows={4}
-            //   value={value}
-            //   onChange={handleChange}
-            variant="standard"
-            disabled={true}
-          />
-        </Typography>
-        <Typography
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            paddingTop: "10px",
-            paddingRight: "20px",
-            paddingLeft: "20px",
-          }}
-        >
-          <Send />
-        </Typography> */}
-      </Box>
+      ></Box>
     </Box>
   );
 }

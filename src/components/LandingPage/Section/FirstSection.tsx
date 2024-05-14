@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import space from "../../../assets/images/space.jpg";
+import space from "../../../assets/images/bg-about-us.jpg";
 import CustomizedDialogs from "./ModalStarted";
 import { useState } from "react";
 
@@ -54,7 +54,7 @@ const FirstSection = () => {
           backgroundRepeat: " no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          height: "500px",
+          height: "680px",
           justifyContent: "space-between",
         }}
         id="home"
