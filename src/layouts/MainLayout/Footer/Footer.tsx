@@ -1,25 +1,11 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { Container, Grid, Link, Stack, Box, Typography } from "@mui/material";
-import React from "react";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+
+const currentYear = new Date().getFullYear();
+document.write(currentYear.toString());
 
 function Footer() {
   return (
@@ -119,8 +105,8 @@ function Footer() {
               }}
             >
               Copyright ©{" "}
-              <script>document.write(new Date().getFullYear())</script>2021
-              Material Design by Creative Tim.
+              <script>document.write(new Date().getFullYear())</script>
+              {currentYear} Material Design by Algo Sama.
             </Typography>
           </Grid>
           <Grid

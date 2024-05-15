@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
-==========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -24,9 +9,9 @@ import TransparentBlogCard from "../blogs/TransparentBlogCard";
 import BackgroundBlogCard from "../blogs/BackgroundBlogCard";
 
 // Images
-import post1 from "../../../assets/images/examples/testimonial-6-2.jpg";
-import post2 from "../../../assets/images/examples/testimonial-6-3.jpg";
-import post3 from "../../../assets/images/examples/blog-9-4.jpg";
+import post1 from "../../../assets/images/examples/instaDrink.png";
+import post2 from "../../../assets/images/examples/yourLifeCard.png";
+import post3 from "../../../assets/images/examples/MedSolution.png";
 import post4 from "../../../assets/images/examples/blog2.jpg";
 
 import { Box, Typography } from "@mui/material";
@@ -44,11 +29,14 @@ function Places(): JSX.Element {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post1}
-              title="Rover raised $65 million"
-              description="Finding temporary housing for your dog should be as easy as renting an Airbnb. That’s the idea behind Rover ..."
+              title="Insta Drink "
+              description="Tired of waiting or queuing to order (at your favorite establishment)? 
+              your ordeal ends here and now. Thanks to the Instadrink mobile application you can, from your smartphone, instantly consult the menu of the establishment you are in, order and pay without ever having 
+              to queue or wait again. “Life is too short to wait” so hurry up and download it and join the movement"
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route:
+                  "https://play.google.com/store/apps/details/Instadrink?id=com.food.instadrink&pli=1",
                 color: "info",
               }}
             />
@@ -56,11 +44,11 @@ function Places(): JSX.Element {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post2}
-              title="MateLabs machine learning"
-              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
+              title="Your Life Card"
+              description="The easiest way to connect with your audience and fans offline. Equipped with NFC technology to tap on-the-go."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route: "https://www.yourlifecard.com/sign-up",
                 color: "info",
               }}
             />
@@ -68,11 +56,14 @@ function Places(): JSX.Element {
           <Grid item xs={12} sm={6} lg={3}>
             <TransparentBlogCard
               image={post3}
-              title="MateLabs machine learning"
-              description="If you’ve ever wanted to train a machine learning model and integrate it with IFTTT, you now can with ..."
+              title="Med solution"
+              description="When it comes to today’s healthcare staffing challenges,
+               there’s no such thing as a “one-size-fits-all” solution. That’s why Medical Solutions is keeping healthcare more human
+               with comprehensive healthcare staffing services for hospitals and medical facilities nationwide."
               action={{
                 type: "internal",
-                route: "/pages/blogs/author",
+                route:
+                  "https://www.medicalsolutions.com/our-workforce-solutions/",
                 color: "info",
               }}
             />
@@ -81,7 +72,8 @@ function Places(): JSX.Element {
             <BackgroundBlogCard
               image={post4}
               title="Flexible work hours"
-              description="Rather than worrying about switching offices every couple years, you stay in the same place."
+              description="Rather than worrying about switching offices every couple years, you stay in the same place.
+              We deliver the work directly to you."
               action={{
                 type: "internal",
                 route: "/pages/blogs/author",

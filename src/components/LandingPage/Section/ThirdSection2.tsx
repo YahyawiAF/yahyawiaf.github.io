@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { Icon } from "@mui/material";
 import { Box, Typography, Avatar } from "@mui/material";
 import React from "react";
@@ -24,7 +9,7 @@ interface DefaultReviewCardProps {
   name: string;
   date: string;
   review: string;
-  rating: 1 | 2 | 3 | 4 | 5;
+  rating: number;
 }
 
 const DefaultReviewCard: React.FC<DefaultReviewCardProps> = ({
@@ -47,13 +32,7 @@ const DefaultReviewCard: React.FC<DefaultReviewCardProps> = ({
   };
 
   return (
-    <Box
-      //variant={color === "transparent" ? "contained" : "gradient"}
-      // bgColor={color}
-      borderRadius="xl"
-      // shadow={color === "transparent" ? "none" : "md"}
-      p={3}
-    >
+    <Box borderRadius="xl" p={3}>
       {image && (
         <Avatar
           src={image}
@@ -132,7 +111,7 @@ DefaultReviewCard.propTypes = {
   name: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   review: PropTypes.string.isRequired,
-  // rating: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
+  rating: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
 };
 
 export default DefaultReviewCard;

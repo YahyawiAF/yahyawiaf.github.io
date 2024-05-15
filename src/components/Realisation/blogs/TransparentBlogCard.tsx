@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
-==========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // react-router components
 import { Link } from "react-router-dom";
 
@@ -21,7 +6,6 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import Card from "@mui/material/Card";
-import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
 // Material Kit 2 React components
@@ -109,7 +93,9 @@ function TransparentBlogCard({
       }}
     >
       {action.type === "internal" ? (
-        <Link to={action.route}>{imageTemplate}</Link>
+        <Link target="_blank" to={action.route}>
+          {imageTemplate}
+        </Link>
       ) : (
         <MuiLink href={action.route} target="_blank" rel="noreferrer">
           {imageTemplate}
@@ -117,13 +103,43 @@ function TransparentBlogCard({
       )}
       <Box pt={2} pb={3}>
         {action.type === "internal" ? (
-          <Link to={action.route}>
+          <Link
+            style={{
+              margin: 0,
+              fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+              fontSize: "1.25rem",
+              lineHeight: 1.375,
+              color: "#344767",
+              fontWeight: 700,
+              letterSpacing: "0em",
+              marginBottom: "0.35em",
+              opacity: 1,
+              textTransform: "none",
+              verticalAlign: "unset",
+              textDecoration: "none",
+            }}
+            to={action.route}
+          >
             <Typography variant="h5" gutterBottom>
               {title}
             </Typography>
           </Link>
         ) : (
           <MuiLink
+            style={{
+              margin: 0,
+              fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+              fontSize: "1.25rem",
+              lineHeight: 1.375,
+              color: "#344767",
+              fontWeight: 700,
+              letterSpacing: "0em",
+              marginBottom: "0.35em",
+              opacity: 1,
+              textTransform: "none",
+              verticalAlign: "unset",
+              textDecoration: "none",
+            }}
             href={action.route}
             target="_blank"
             rel="noreferrer"

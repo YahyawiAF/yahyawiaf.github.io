@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Icon, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 interface DefaultInfoCardProps {
   color?: string;
@@ -24,13 +24,7 @@ const DefaultInfoCard: React.FC<DefaultInfoCardProps> = ({
       textAlign={direction}
     >
       {typeof icon === "string" ? (
-        <Typography
-          display="block"
-          //variant={direction === 'center' ? 'h2' : 'h3'}
-        >
-          {" "}
-          {icon}
-        </Typography>
+        <Typography display="block"> {icon}</Typography>
       ) : (
         icon
       )}

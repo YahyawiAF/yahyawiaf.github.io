@@ -1,22 +1,11 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import { Container, Grid, Link, Stack, Typography, Box } from "@mui/material";
 
-// Material Kit 2 React components
+// Material Kit 2 React componentsc
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Footer() {
   return (
@@ -131,7 +120,7 @@ function Footer() {
               sx={{ opacity: 0.5 }}
               mr={3}
             >
-              <i className="fab fa-dribbble" />
+              <SportsBasketballIcon />
             </Typography>
             <Typography
               component={Link}
@@ -143,7 +132,7 @@ function Footer() {
               sx={{ opacity: 0.5 }}
               mr={3}
             >
-              <i className="fab fa-twitter" />
+              <InstagramIcon />
             </Typography>
             <Typography
               component={Link}
@@ -155,7 +144,7 @@ function Footer() {
               sx={{ opacity: 0.5 }}
               mr={3}
             >
-              <i className="fab fa-pinterest" />
+              <PinterestIcon />
             </Typography>
             <Typography
               component={Link}
@@ -166,7 +155,7 @@ function Footer() {
               color="dark"
               sx={{ opacity: 0.5 }}
             >
-              <i className="fab fa-github" />
+              <GitHubIcon />
             </Typography>
           </Grid>
         </Grid>

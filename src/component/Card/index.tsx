@@ -9,6 +9,9 @@ import TouchAppIcon from "@mui/icons-material/TouchApp";
 
 import bgFront from "../../assets/images/rotating-card-bg-front.jpeg";
 import bgBack from "../../assets/images/rotating-card-bg-back.jpeg";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import PriceChangeIcon from "@mui/icons-material/PriceChange";
+import FlipToFrontIcon from "@mui/icons-material/FlipToFront";
 
 function Information() {
   return (
@@ -59,7 +62,7 @@ function Information() {
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
+                  icon={<FlipToFrontIcon />}
                   title="MUI Ready"
                   description="The world's most popular react components library for building user interfaces."
                 />
@@ -68,14 +71,14 @@ function Information() {
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
+                  icon={<PriceChangeIcon />}
                   title="Save Time & Money"
                   description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
+                  icon={<PhoneAndroidIcon />}
                   title="Fully Responsive"
                   description="Regardless of the screen size, the website content will naturally fit the given resolution."
                 />

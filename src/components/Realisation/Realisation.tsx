@@ -1,26 +1,10 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
-==========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "./Part/profile";
 
 // Author page sections
 import Profile from "./Part/profile";
@@ -33,21 +17,11 @@ import Footer from "./Part/Footer";
 
 // Images
 import bgImage from "../../assets/images/city-profile.jpg";
+import PartTwo from "./Part/PartTwo";
 
 function Author(): JSX.Element {
   return (
     <Box width="100%">
-      {/*     <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
-        transparent
-        light
-      />*/}
       <Box width="100%">
         <Box
           minHeight="25rem"
@@ -75,6 +49,23 @@ function Author(): JSX.Element {
           <Posts />
         </Card>
         <Contact />
+        <Grid item xs={11} sm={9} md={5} lg={4} xl={3}>
+          <Card>
+            <Box mx={2} mt={-3} p={2} mb={1} textAlign="center">
+              <Box
+                component="main"
+                sx={{
+                  flexGrow: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  overflowX: "hidden",
+                }}
+              >
+                <PartTwo />
+              </Box>
+            </Box>
+          </Card>
+        </Grid>
         <Footer />
       </Box>
     </Box>
