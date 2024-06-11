@@ -126,6 +126,20 @@ const Navbar = () => {
               </a>
             </ItemButton>
           </ListItem>
+          <ListItem>
+            <ItemButton
+              onClick={() => {
+                navigate("/service");
+              }}
+            >
+              <a
+                href="#realisation"
+                style={{ textDecoration: "none", color: "#000000" }}
+              >
+                Service
+              </a>
+            </ItemButton>
+          </ListItem>
         </ListContainer>
       </Box>
     </NavContainer>

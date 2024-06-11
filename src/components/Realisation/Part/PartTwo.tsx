@@ -34,7 +34,7 @@ const CardContainer = styled(Card)(({ theme }) => ({
   },
 }));
 const ProjectTitle = styled(Typography)(({ theme }) => ({
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   fontSize: "32px",
   color: "#000000",
   [theme.breakpoints.down("md")]: {
@@ -43,7 +43,7 @@ const ProjectTitle = styled(Typography)(({ theme }) => ({
 }));
 const Title = styled(Typography)(({ theme }) => ({
   fontSize: "26px",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   color: "#000000",
   [theme.breakpoints.down("md")]: {
     fontSize: "20px",
@@ -51,7 +51,7 @@ const Title = styled(Typography)(({ theme }) => ({
 }));
 const SubTitle = styled(Typography)(({ theme }) => ({
   fontSize: "25px",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   color: "#000000",
   [theme.breakpoints.down("md")]: {
     fontSize: "20px",
@@ -59,7 +59,8 @@ const SubTitle = styled(Typography)(({ theme }) => ({
 }));
 const Text = styled(Typography)(({ theme }) => ({
   fontSize: "16px",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
+  textAlign: "justify",
   color: "#000000",
   [theme.breakpoints.down("md")]: {
     fontSize: "15px",
@@ -120,7 +121,7 @@ const images = [
                 </StarContainer>
               </Typography>
 
-              <SubTitle gutterBottom>Comment</SubTitle>
+              <SubTitle gutterBottom></SubTitle>
               <Text>
                 WeaveLines knowledge of the startup world and their dedication
                 to us prospering in it was incredible. I can t imagine another

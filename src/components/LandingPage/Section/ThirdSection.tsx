@@ -70,7 +70,7 @@ const ThirdSection = () => {
                   <Metting width={"70px"} />
                 </Typography>
                 <Typography
-                  fontFamily={"Poetsen One"}
+                  fontFamily={"Roboto"}
                   fontSize={"24px"}
                   color={"#fff"}
                 >
@@ -97,7 +97,7 @@ const ThirdSection = () => {
                   <Cloud width={"70px"} />
                 </Typography>
                 <Typography
-                  fontFamily={"Poetsen One"}
+                  fontFamily={"Roboto"}
                   fontSize={"24px"}
                   color={"#fff"}
                 >
@@ -131,7 +131,7 @@ const ThirdSection = () => {
                 }}
               >
                 <Typography
-                  fontFamily={"Poetsen One"}
+                  fontFamily={"Roboto"}
                   fontSize={"24px"}
                   color={"#fff"}
                 >
@@ -158,7 +158,7 @@ const ThirdSection = () => {
                 }}
               >
                 <Typography
-                  fontFamily={"Poetsen One"}
+                  fontFamily={"Roboto"}
                   fontSize={"24px"}
                   color={"#fff"}
                 >
@@ -222,7 +222,7 @@ const ThirdSection = () => {
                   <Support width={"70px"} />
                 </Typography>
                 <Typography
-                  fontFamily={"Poetsen One"}
+                  fontFamily={"Roboto"}
                   fontSize={"24px"}
                   color={"#fff"}
                 >

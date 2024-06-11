@@ -5,11 +5,11 @@ import CustomizedDialogs from "./ModalStarted";
 import { useState } from "react";
 
 const Title = styled(Typography)(({ theme }) => ({
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   fontSize: "27px",
   fontWeight: "600",
   textTransform: "uppercase",
-  textAlign: "center",
+  textAlign: "justify",
   color: "#FFFFFF",
   [theme.breakpoints.down("sm")]: {
     fontSize: "32px",

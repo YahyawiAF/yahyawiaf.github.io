@@ -1,4 +1,4 @@
-import { Container, Grid, Link, Stack, Box, Typography } from "@mui/material";
+import { Container, Grid, Link, Box, Typography } from "@mui/material";
 import XIcon from "@mui/icons-material/X";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -27,77 +27,6 @@ function Footer() {
             >
               Material Design
             </Typography>
-            <Stack
-              component="ul"
-              direction="row"
-              flexWrap="wrap"
-              spacing={3}
-              justifyContent={{ xs: "center", lg: "flex-start" }}
-              pl={0}
-              mb={3}
-              sx={{ listStyle: "none" }}
-            >
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{
-                    opacity: 0.8,
-                  }}
-                  component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Home
-                </Typography>
-              </Box>
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{
-                    opacity: 0.8,
-                  }}
-                  component={Link}
-                  href="https://www.creative-tim.com/presentation"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  About
-                </Typography>
-              </Box>
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{
-                    opacity: 0.8,
-                  }}
-                  component={Link}
-                  href="https://www.creative-tim.com/blog"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Blog
-                </Typography>
-              </Box>
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{
-                    opacity: 0.8,
-                  }}
-                  component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Services
-                </Typography>
-              </Box>
-            </Stack>
             <Typography
               variant="button"
               sx={{

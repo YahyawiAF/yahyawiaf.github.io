@@ -27,7 +27,7 @@ const Title = styled(Typography)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: "400",
   fontSize: "34px",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "36px",
@@ -52,7 +52,7 @@ const SubTitle = styled(Typography)(({ theme }) => ({
 const TextDescription = styled(Typography)(({ theme }) => ({
   fontSize: "1rem",
   color: "#000000",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   padding: "20px 0",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "24px",
@@ -67,7 +67,9 @@ const TextAppear = styled(Typography)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: "400",
   fontSize: "1.5rem",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
+  textAlign: "justify",
+
   lineHeight: "117.5%",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
@@ -75,7 +77,7 @@ const TextAppear = styled(Typography)(({ theme }) => ({
   },
   [theme.breakpoints.down("md")]: {
     fontSize: "18px",
-    textAlign: "center",
+    textAlign: "justify",
     display: "flex",
     alignItems: "center",
   },
@@ -84,14 +86,14 @@ const TitleAppear = styled(Typography)(({ theme }) => ({
   fontStyle: "normal",
   fontWeight: "400",
   fontSize: "28px",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   color: "#000000",
   [theme.breakpoints.between("md", "lg")]: {
     fontSize: "14px",
   },
   [theme.breakpoints.down("md")]: {
     fontSize: "24px",
-    textAlign: "center",
+    textAlign: "justify",
     display: "flex",
     alignItems: "center",
   },
@@ -205,7 +207,7 @@ const ButtonStart = styled(Button)(({ theme }) => ({
   fontSize: "19px",
   letterSpacing: "0.03em",
   color: "white",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   background: "transparent",
   border: "2px solid #f736f8",
   [theme.breakpoints.down("md")]: {
@@ -219,8 +221,8 @@ const ButtonStart = styled(Button)(({ theme }) => ({
 }));
 const ContactTitle = styled(Typography)(({ theme }) => ({
   fontSize: "3rem",
-  fontFamily: "Poetsen One ",
-  textAlign: "center",
+  fontFamily: "Roboto ",
+  textAlign: "justify",
   color: "#FFFFFF",
   [theme.breakpoints.down("md")]: {
     fontSize: "36px",
@@ -242,13 +244,13 @@ const ContactContainer = styled(Box)(({ theme }) => ({
 const ContactText = styled(Typography)(({ theme }) => ({
   display: "flex",
   fontSize: "32px",
-  fontFamily: "Poetsen One",
+  fontFamily: "Roboto",
   justifyContent: "start",
   color: "#FFFFFF",
   [theme.breakpoints.down("md")]: {
     display: "flex",
     fontSize: "24px",
-    textAlign: "center",
+    textAlign: "justify",
     justifyContent: "center",
     alignItems: "center",
     padding: "20px",

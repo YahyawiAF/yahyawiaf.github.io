@@ -137,7 +137,7 @@ function Download() {
               We deliver the best web products
             </Typography>
           </Grid>
-          <Grid
+          <Block
             item
             xs={12}
             lg={5}
@@ -171,7 +171,7 @@ function Download() {
               <i className="fab fa-pinterest" />
               &nbsp;Pin it
             </ButtonStarts>
-          </Grid>
+          </Block>
         </Grid>
       </Container>
     </Box>
@@ -190,6 +190,15 @@ const ButtonStarts = styled(Button)(({ theme }) => ({
     width: "170px",
     height: "35px",
     fontSize: "11px",
+  },
+}));
+const Block = styled(Grid)(({ theme }) => ({
+  [theme.breakpoints.down(380)]: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: "10px",
   },
 }));
 export default Download;

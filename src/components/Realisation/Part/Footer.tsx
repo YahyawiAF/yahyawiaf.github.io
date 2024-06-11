@@ -1,5 +1,5 @@
 // @mui material components
-import { Container, Grid, Link, Stack, Typography, Box } from "@mui/material";
+import { Container, Grid, Link, Typography, Box } from "@mui/material";
 
 // Material Kit 2 React componentsc
 import PinterestIcon from "@mui/icons-material/Pinterest";
@@ -27,69 +27,6 @@ function Footer() {
             >
               Material Design
             </Typography>
-            <Stack
-              component="ul"
-              direction="row"
-              flexWrap="wrap"
-              spacing={3}
-              justifyContent={{ xs: "center", lg: "flex-start" }}
-              pl={0}
-              mb={3}
-              sx={{ listStyle: "none" }}
-            >
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{ opacity: 0.8 }}
-                  component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Home
-                </Typography>
-              </Box>
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{ opacity: 0.8 }}
-                  component={Link}
-                  href="https://www.creative-tim.com/presentation"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  About
-                </Typography>
-              </Box>
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{ opacity: 0.8 }}
-                  component={Link}
-                  href="https://www.creative-tim.com/blog"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Blog
-                </Typography>
-              </Box>
-              <Box component="li">
-                <Typography
-                  variant="button"
-                  fontWeight="regular"
-                  sx={{ opacity: 0.8 }}
-                  component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Services
-                </Typography>
-              </Box>
-            </Stack>
             <Typography variant="button" sx={{ opacity: 0.8 }}>
               Copyright © {new Date().getFullYear()} Material Design Algo Sama.
             </Typography>
