@@ -1,17 +1,23 @@
+import Image from "next/image";
 import { founder } from "@/content/site";
 import { buttonVariants } from "@/components/ui/button";
-import { AbstractAvatar } from "@/components/abstract-avatar";
 import { cn } from "@/lib/utils";
 
 export function FounderSection() {
   return (
     <section id="founder" className="scroll-mt-20 bg-[#e8f4fc] py-20 sm:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 md:grid-cols-[auto_1fr]">
-        <AbstractAvatar
-          variant="sky"
-          name={founder.name}
-          className="size-36 md:size-40"
-        />
+        <div className="relative mx-auto size-40 overflow-hidden rounded-full shadow-lg ring-4 ring-[#7ec4ef] md:size-48">
+          <Image
+            src={founder.photo}
+            alt={founder.name}
+            fill
+            className="object-cover object-top"
+            unoptimized
+            sizes="192px"
+            priority
+          />
+        </div>
         <div>
           <p className="text-sm font-bold uppercase tracking-widest text-sky-mid">
             Player one
@@ -46,6 +52,17 @@ export function FounderSection() {
               )}
             >
               LinkedIn
+            </a>
+            <a
+              href={founder.upwork}
+              target="_blank"
+              rel="noreferrer"
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "bg-[#14A800] text-white hover:bg-[#108a00] transition hover:-translate-y-0.5",
+              )}
+            >
+              Upwork
             </a>
             <a
               href={founder.github}

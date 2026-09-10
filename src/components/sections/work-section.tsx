@@ -60,6 +60,7 @@ function WorkCard({
       }}
       className={cn(
         "group/card flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-border/70 bg-card text-left shadow-sm transition hover:-translate-y-1 hover:border-sky-mid/40 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+        project.id === "upwork" && "border-[#14A800]/40 ring-1 ring-[#14A800]/20",
         visible && "animate-card-enter",
       )}
       style={{ animationDelay: visible ? `${index * 80}ms` : undefined }}
@@ -67,6 +68,11 @@ function WorkCard({
     >
       <div className="preview-stage relative h-44 overflow-hidden bg-gradient-to-b from-[#9ad4f5]/50 via-[#e8f4fc] to-[#d6ebf8]">
         <ProjectPreview id={project.preview} />
+        {project.iaSoon && (
+          <span className="ia-snow-badge absolute top-3 right-3 z-10 rounded-full px-2.5 py-1 text-[10px] font-extrabold tracking-wide uppercase">
+            <span className="relative z-10">IA soon</span>
+          </span>
+        )}
       </div>
 
       <div className="flex flex-1 flex-col p-5">
@@ -92,6 +98,11 @@ function WorkCard({
         <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
           {project.blurb}
         </p>
+        {project.id === "algosama" && (
+          <p className="mt-2 rounded-lg border border-dashed border-sky-mid/40 bg-[#e8f4fc]/80 px-2.5 py-1.5 text-[11px] font-medium text-foreground">
+            Coming soon: internal IA with Odyssey / LangChain
+          </p>
+        )}
         <p className="mt-3 text-xs font-bold uppercase tracking-wide text-primary/70">
           Click for screenshots
           {project.videoId ? " & video" : ""}

@@ -23,6 +23,14 @@ export function SiteFooter() {
             LinkedIn
           </a>
           <a
+            href={contact.upwork}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline"
+          >
+            Upwork
+          </a>
+          <a
             href={contact.github}
             target="_blank"
             rel="noreferrer"

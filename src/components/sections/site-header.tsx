@@ -1,4 +1,4 @@
-import { company, navLinks } from "@/content/site";
+import { portfolio, navLinks } from "@/content/site";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -10,7 +10,8 @@ export function SiteHeader() {
           href="#home"
           className="font-heading text-lg font-semibold tracking-wide text-white drop-shadow-sm"
         >
-          {company.name}
+          {portfolio.name.split(" ").slice(-1)[0]}
+          <span className="ml-2 text-accent">AF</span>
         </a>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -24,13 +25,13 @@ export function SiteHeader() {
           ))}
         </nav>
         <a
-          href="#contact"
+          href="#founder"
           className={cn(
             buttonVariants({ size: "sm" }),
             "bg-accent text-accent-foreground hover:bg-accent/90 shadow-md transition hover:-translate-y-0.5",
           )}
         >
-          Start a quest
+          Player
         </a>
       </div>
     </header>

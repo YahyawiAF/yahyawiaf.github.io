@@ -1,4 +1,4 @@
-import { company } from "@/content/site";
+import { company, portfolio } from "@/content/site";
 import { buttonVariants } from "@/components/ui/button";
 import { SkyClouds } from "@/components/sky-clouds";
 import { cn } from "@/lib/utils";
@@ -11,25 +11,30 @@ export function HeroSection() {
     >
       <SkyClouds />
       <div className="animate-soft-rise relative z-10 mx-auto w-full max-w-6xl px-4 pb-20 pt-28 sm:px-6">
-        <p className="font-heading text-5xl font-bold tracking-tight text-white drop-shadow-md sm:text-7xl md:text-8xl">
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-white/85">
+          Portfolio · Player one
+        </p>
+        <p className="mt-3 font-heading text-4xl font-bold tracking-tight text-white drop-shadow-md sm:text-6xl md:text-7xl">
+          {portfolio.name}
+        </p>
+        <p className="mt-3 font-heading text-3xl font-semibold text-accent drop-shadow-sm sm:text-4xl">
           {company.name}
         </p>
-        <h1 className="mt-5 max-w-2xl font-heading text-2xl font-semibold text-white/95 sm:text-3xl">
-          Software that helps teams clear the next level.
+        <h1 className="mt-5 max-w-2xl font-heading text-xl font-semibold text-white/95 sm:text-2xl">
+          {portfolio.headline}
         </h1>
         <p className="mt-4 max-w-xl text-base text-white/90 sm:text-lg">
-          Web, mobile, backend, and design — shipped as one craft from Tunisia
-          since {company.founded}.
+          {portfolio.blurb}
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
-            href="#contact"
+            href="#founder"
             className={cn(
               buttonVariants({ size: "lg" }),
               "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg transition hover:-translate-y-1 hover:shadow-xl",
             )}
           >
-            Start a quest
+            Meet player one
           </a>
           <a
             href="#work"
@@ -38,7 +43,7 @@ export function HeroSection() {
               "bg-white/90 text-primary hover:bg-white shadow-md transition hover:-translate-y-1",
             )}
           >
-            See our levels
+            See all levels
           </a>
         </div>
       </div>

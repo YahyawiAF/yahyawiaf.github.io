@@ -8,6 +8,9 @@ import { RealtyPreview } from "./RealtyPreview";
 import { OrderFlowPreview } from "./OrderFlowPreview";
 import { AgencyPreview } from "./AgencyPreview";
 import { TravelPreview } from "./TravelPreview";
+import { HubPreview } from "./HubPreview";
+import { StudioPreview } from "./StudioPreview";
+import { UpworkPreview } from "./UpworkPreview";
 
 const registry: Record<ProjectPreviewId, () => JSX.Element> = {
   erp: ErpFlowPreview,
@@ -18,6 +21,9 @@ const registry: Record<ProjectPreviewId, () => JSX.Element> = {
   orders: OrderFlowPreview,
   agency: AgencyPreview,
   travel: TravelPreview,
+  hub: HubPreview,
+  studio: StudioPreview,
+  upwork: UpworkPreview,
 };
 
 export function ProjectPreview({ id }: { id: ProjectPreviewId }) {

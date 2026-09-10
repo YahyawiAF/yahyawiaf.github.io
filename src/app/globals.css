@@ -259,6 +259,46 @@
   }
 }
 
+@keyframes snow-fall {
+  0% {
+    background-position: 0 0, 20px 10px, 40px 0;
+  }
+  100% {
+    background-position: 0 40px, 20px 50px, 40px 40px;
+  }
+}
+
+.ia-snow-badge {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f7ff 45%, #e8f4fc 100%);
+  color: #1a3a6b;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 0 0 1px rgba(126, 196, 239, 0.35),
+    0 4px 14px rgba(26, 58, 107, 0.18);
+}
+
+.ia-snow-badge::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.85;
+  background-image:
+    radial-gradient(circle at 20% 20%, #fff 1.2px, transparent 1.5px),
+    radial-gradient(circle at 70% 40%, #fff 1px, transparent 1.4px),
+    radial-gradient(circle at 40% 75%, #e8f4fc 1.3px, transparent 1.6px);
+  background-size: 18px 18px, 22px 22px, 16px 16px;
+  animation: snow-fall 2.8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ia-snow-badge::before {
+    animation: none;
+  }
+}
+
 .animate-flow-dash {
   animation: flow-dash 1.2s linear infinite;
 }

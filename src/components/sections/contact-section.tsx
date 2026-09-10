@@ -73,6 +73,14 @@ export function ContactSection() {
                 LinkedIn
               </a>
               <a
+                href={contact.upwork}
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#14A800] hover:underline"
+              >
+                Upwork
+              </a>
+              <a
                 href={contact.github}
                 target="_blank"
                 rel="noreferrer"

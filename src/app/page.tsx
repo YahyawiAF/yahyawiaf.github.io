@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/sections/site-header";
 import { HeroSection } from "@/components/sections/hero-section";
+import { WorldsSection } from "@/components/sections/worlds-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { WorkSection } from "@/components/sections/work-section";
 import { FounderSection } from "@/components/sections/founder-section";
@@ -13,9 +14,10 @@ export default function HomePage() {
       <SiteHeader />
       <main className="flex-1">
         <HeroSection />
+        <FounderSection />
+        <WorldsSection />
         <ServicesSection />
         <WorkSection />
-        <FounderSection />
         <TeamSection />
         <ContactSection />
       </main>
