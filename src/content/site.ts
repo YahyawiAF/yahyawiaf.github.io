@@ -195,7 +195,7 @@ export const projects: Project[] = [
     level: "Stage 1",
     blurb:
       "My software studio — web, mobile, backend, and design for clients and products. Home of Supply Chain Pro and the ALGOSAMA team quest.",
-    caption: "Studio world — products & craft · IA coming soon.",
+    caption: "Studio world — products & craft.",
     stack: [
       "React",
       "React Native",
@@ -210,7 +210,6 @@ export const projects: Project[] = [
     capabilities: ["web", "mobile", "backend", "design"],
     preview: "studio",
     roleNote: "Founder & CTO — ALGOSAMA is my company stage in this portfolio world.",
-    iaSoon: true,
     stackLogos: [
       { id: "react" },
       { id: "react-native" },
@@ -221,15 +220,10 @@ export const projects: Project[] = [
       { id: "postgresql" },
       { id: "prisma" },
       { id: "docker" },
-      { id: "odyssey", comingSoon: true },
-      { id: "langchain", comingSoon: true },
     ],
-    comingSoonNote:
-      "Coming soon — powering ALGOSAMA apps with IA internally using Odyssey or LangChain for smarter product workflows and recommendations.",
     features: [
       "Full-stack delivery: web, mobile, backend, design",
       "Client products & internal tools under one studio",
-      "Coming soon: internal IA layer (Odyssey / LangChain)",
     ],
   },
   {

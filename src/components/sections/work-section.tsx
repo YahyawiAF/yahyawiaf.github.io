@@ -98,11 +98,6 @@ function WorkCard({
         <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
           {project.blurb}
         </p>
-        {project.id === "algosama" && (
-          <p className="mt-2 rounded-lg border border-dashed border-sky-mid/40 bg-[#e8f4fc]/80 px-2.5 py-1.5 text-[11px] font-medium text-foreground">
-            Coming soon: internal IA with Odyssey / LangChain
-          </p>
-        )}
         <p className="mt-3 text-xs font-bold uppercase tracking-wide text-primary/70">
           Click for screenshots
           {project.videoId ? " & video" : ""}
