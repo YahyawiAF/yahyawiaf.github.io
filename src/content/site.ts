@@ -70,7 +70,7 @@ export const founder = {
   name: "Abdel Fatteh Yahyaoui",
   roles: ["Full-Stack Software Developer | AI & Business Systems", "CTO & Founder @ ALGOSAMA"],
   location: "Tunisia",
-  photo: "/portrait/abdel.jpg",
+  photo: "/portrait/abdel-v2.jpg",
   summary:
     "Full-stack JS engineer with 7+ years shipping and modernizing production web and mobile apps. Leads delivery for clients and products at ALGOSAMA — from discovery to deploy. Also building Collabora Hub as a real-world workspace stage.",
   stack: [
