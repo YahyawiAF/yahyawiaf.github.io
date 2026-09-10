@@ -68,7 +68,7 @@ export const emailjsConfig = {
 
 export const founder = {
   name: "Abdel Fatteh Yahyaoui",
-  roles: ["Senior Full-Stack Engineer", "CTO & Founder @ ALGOSAMA"],
+  roles: ["Full-Stack Software Developer | AI & Business Systems", "CTO & Founder @ ALGOSAMA"],
   location: "Tunisia",
   photo: "/portrait/abdel.jpg",
   summary:
