@@ -227,7 +227,7 @@ export function ProjectDetailModal({
                 <div className="space-y-2">
                   <h4 className="font-heading text-sm font-semibold">
                     {project.id === "erp-supply"
-                      ? "Web app screenshots"
+                      ? "Web, Entrepôt & Commercial screenshots"
                       : "Screenshots"}
                   </h4>
                   <p className="text-xs text-muted-foreground">
@@ -236,7 +236,7 @@ export function ProjectDetailModal({
                   <div
                     className={cn(
                       "grid gap-3",
-                      project.id === "tjwaal"
+                      project.id === "tjwaal" || project.id === "erp-supply"
                         ? "grid-cols-2 sm:grid-cols-3"
                         : project.id === "collabora-hub"
                           ? "grid-cols-2 sm:grid-cols-3"
