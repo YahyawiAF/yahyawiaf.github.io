@@ -209,7 +209,6 @@ export const projects: Project[] = [
     ],
     capabilities: ["web", "mobile", "backend", "design"],
     preview: "studio",
-    images: ["/projects/algosama/1.jpg"],
     roleNote: "Founder & CTO — ALGOSAMA is my company stage in this portfolio world.",
     iaSoon: true,
     stackLogos: [
