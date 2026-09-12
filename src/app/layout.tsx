@@ -20,9 +20,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abdel Fatteh Yahyaoui — Portfolio · ALGOSAMA & Collabora Hub",
+  title: {
+    default: "ALGOSAMA — Level up your product",
+    template: "%s · ALGOSAMA",
+  },
   description:
-    "Personal portfolio of Abdel Fatteh Yahyaoui — ALGOSAMA software studio, Collabora Hub workspace, and shipped web & mobile products.",
+    "ALGOSAMA software studio — web, mobile, and product engineering. Meet founder Abdel Fatteh Yahyaoui and explore shipped products.",
   metadataBase: new URL("https://yahyawiaf.github.io"),
 };
 

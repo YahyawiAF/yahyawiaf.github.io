@@ -1,20 +1,34 @@
-import { portfolio, navLinks } from "@/content/site";
+import Link from "next/link";
+import { company, navLinks, profileNavLinks } from "@/content/site";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-export function SiteHeader() {
+export function SiteHeader({
+  variant = "company",
+}: {
+  variant?: "company" | "profile";
+}) {
+  const links = variant === "company" ? navLinks : profileNavLinks;
+  const homeHref = variant === "company" ? "#home" : "/";
+
   return (
     <header className="absolute inset-x-0 top-0 z-20">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6">
-        <a
-          href="#home"
+        <Link
+          href={homeHref}
           className="font-heading text-lg font-semibold tracking-wide text-white drop-shadow-sm"
         >
-          {portfolio.name.split(" ").slice(-1)[0]}
-          <span className="ml-2 text-accent">AF</span>
-        </a>
+          {variant === "company" ? (
+            company.name
+          ) : (
+            <>
+              <span className="text-white/80">← </span>
+              {company.name}
+            </>
+          )}
+        </Link>
         <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -24,15 +38,27 @@ export function SiteHeader() {
             </a>
           ))}
         </nav>
-        <a
-          href="#founder"
-          className={cn(
-            buttonVariants({ size: "sm" }),
-            "bg-accent text-accent-foreground hover:bg-accent/90 shadow-md transition hover:-translate-y-0.5",
-          )}
-        >
-          Player
-        </a>
+        {variant === "company" ? (
+          <Link
+            href="/profile/"
+            className={cn(
+              buttonVariants({ size: "sm" }),
+              "bg-accent text-accent-foreground hover:bg-accent/90 shadow-md transition hover:-translate-y-0.5",
+            )}
+          >
+            Founder
+          </Link>
+        ) : (
+          <a
+            href="#founder"
+            className={cn(
+              buttonVariants({ size: "sm" }),
+              "bg-accent text-accent-foreground hover:bg-accent/90 shadow-md transition hover:-translate-y-0.5",
+            )}
+          >
+            Player
+          </a>
+        )}
       </div>
     </header>
   );

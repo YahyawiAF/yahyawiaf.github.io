@@ -186,6 +186,10 @@ export type Project = {
   stackLogos?: { id: string; comingSoon?: boolean }[];
   /** Coming-soon IA roadmap note */
   comingSoonNote?: string;
+  /** Flagship on ALGOSAMA home page */
+  featured?: boolean;
+  /** Secondary client work on ALGOSAMA home (not featured) */
+  companyWork?: boolean;
 };
 
 export const projects: Project[] = [
@@ -236,6 +240,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "React Native", "NestJS", "PostgreSQL"],
     capabilities: ["web", "mobile", "backend", "design"],
     preview: "hub",
+    featured: true,
     iaSoon: true,
     roleNote:
       "Linked to Stage 2 in Worlds — real space photos + live product screens (web & mobile).",
@@ -298,6 +303,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "NestJS", "React Native", "PostgreSQL", "IA"],
     capabilities: ["web", "mobile", "backend", "design"],
     preview: "erp",
+    featured: true,
     roleNote:
       "Web + Entrepôt + Commercial mobile ready — one shared stack (Admin · Entrepôt · Commercial/Chauffeur roles). Still needed: Mobile Admin, Caisse, and POS screens for the connected-entity animation.",
     images: [
@@ -339,6 +345,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "NestJS", "Prisma", "PostgreSQL"],
     capabilities: ["web", "backend", "design"],
     preview: "school",
+    companyWork: true,
     images: [
       "/projects/myschoolstore/1.png",
       "/projects/myschoolstore/2.png",
@@ -359,6 +366,7 @@ export const projects: Project[] = [
     stack: ["React Native", "TypeScript", "APIs"],
     capabilities: ["mobile", "backend", "design"],
     preview: "healthcare",
+    companyWork: true,
     videoId: "vupBjML7s2Q",
     images: [
       "/projects/healthcare-rn/1.png",
@@ -375,6 +383,7 @@ export const projects: Project[] = [
     stack: ["React Native", "iOS", "Mobile"],
     capabilities: ["mobile", "backend", "design"],
     preview: "travel",
+    featured: true,
     href: "https://apps.apple.com/us/app/tjwaal-hotels-flights/id6741045428",
     images: [
       "/projects/tjwaal/1.png",
@@ -397,6 +406,7 @@ export const projects: Project[] = [
     stack: ["React Native", "Node", "APIs"],
     capabilities: ["mobile", "backend"],
     preview: "community",
+    companyWork: true,
     images: ["/projects/enoch/1.png", "/projects/enoch/2.png"],
   },
   {
@@ -409,6 +419,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Design"],
     capabilities: ["web", "design"],
     preview: "realty",
+    companyWork: true,
     images: ["/projects/jhely/1.png", "/projects/jhely/2.png"],
   },
   {
@@ -421,6 +432,7 @@ export const projects: Project[] = [
     stack: ["React Native", "Mobile", "Backend"],
     capabilities: ["mobile", "backend", "design"],
     preview: "orders",
+    companyWork: true,
     images: ["/projects/instadrink/1.png"],
   },
   {
@@ -433,6 +445,7 @@ export const projects: Project[] = [
     stack: ["Web", "Frontend", "Collaboration"],
     capabilities: ["web", "design"],
     preview: "agency",
+    companyWork: true,
     href: "https://inprogress.agency/",
     roleNote:
       "Developer (contributor) — not the product creator. Credit goes to the In Progress Agency team.",
@@ -469,10 +482,24 @@ export const team = [
 ] as const;
 
 export const navLinks = [
-  { href: "#founder", label: "Player" },
-  { href: "#worlds", label: "Worlds" },
-  { href: "#services", label: "Skills" },
-  { href: "#work", label: "Levels" },
+  { href: "#products", label: "Products" },
+  { href: "#services", label: "Services" },
+  { href: "#work", label: "More work" },
   { href: "#team", label: "Équipe" },
   { href: "#contact", label: "Contact" },
 ] as const;
+
+export const profileNavLinks = [
+  { href: "#founder", label: "Player" },
+  { href: "#worlds", label: "Worlds" },
+  { href: "#work", label: "Levels" },
+  { href: "#contact", label: "Contact" },
+] as const;
+
+const featuredOrder = ["erp-supply", "collabora-hub", "tjwaal"] as const;
+
+export const featuredProjects = featuredOrder
+  .map((id) => projects.find((p) => p.id === id))
+  .filter((p): p is Project => Boolean(p));
+
+export const companyWorkProjects = projects.filter((p) => p.companyWork);

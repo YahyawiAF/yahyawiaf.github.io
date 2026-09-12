@@ -1,6 +1,11 @@
+import Link from "next/link";
 import { company, contact } from "@/content/site";
 
-export function SiteFooter() {
+export function SiteFooter({
+  variant = "company",
+}: {
+  variant?: "company" | "profile";
+}) {
   return (
     <footer className="border-t border-border/60 bg-primary text-primary-foreground">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-6">
@@ -11,6 +16,15 @@ export function SiteFooter() {
           </p>
         </div>
         <div className="flex flex-wrap gap-4 text-sm font-semibold">
+          {variant === "company" ? (
+            <Link href="/profile/" className="hover:underline">
+              Founder profile
+            </Link>
+          ) : (
+            <Link href="/" className="hover:underline">
+              ALGOSAMA home
+            </Link>
+          )}
           <a href={contact.emailHref} className="hover:underline">
             Email
           </a>
